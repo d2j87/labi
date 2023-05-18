@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Форма замовлення лабораторної роботи</title>
+        <link rel="stylesheet" href="../static/css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        />
+    </head>
+    <body>
+        <header>
+            <h6><p style="color: transparent;">Невидимий текст</p></h6>
+        </header>
+        <div class="container">
+            <h1><center>&#x1F4D6;</center></h1>
+            <h2><center>Форма замовлення домашніх завдань, лабораторних робіт, КПІЗів та інших видів робіт</center></h2>
+            <form>
+                <div class="form-group">
+                    <label for="pib"
+                        >Вкажіть Ваше ПІБ (Прізвище, ім’я та
+                        по-батькові):</label
+                    >
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="pib"
+                        placeholder="Введіть ПІБ"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="subject">Назва предмета / дисципліни:</label>
+                    <small id="subjectHelp" class="form-text text-muted"
+                        >Напишіть правильну назву</small
+                    >
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="subject"
+                        placeholder="Введіть назву предмета"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="university">Виберіть ваш навчальний заклад:</label>
+                    <select class="form-control" id="university">
+                        <option>
+                            Вибрати навчальний заклад
+                        </option>
+                        <option>
+                            Західноукраїнський національний університет
+                        </option>
+                        <option>
+                            Тернопільський національний технічний університет
+                        </option>
+                        <option>
+                            Тернопільський національний педагогічний університет
+                        </option>
+                        <option>
+                            Тернопільський національний медичний університет
+                        </option>
+                        <option>
+                            Тернопільський кооперативний фаховий коледж
+                        </option>
+                        <option>Галицький коледж</option>
+                        <option>Інше</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="course">Виберіть ваш курс:</label>
+                    <select class="form-control" id="course">
+                        <option>Вибрати курс</option>
+                        <option>1 курс</option>
+                        <option>2 курс</option>
+                        <option>3 курс</option>
+                        <option>4 курс</option>
+                        <option>Магістр</option>
+                        <option>Аспірант</option>
+                        <option>Я не хочу вказувати курс</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="contacts">Вкажіть ваші контакти:</label>
+                    <small id="contactsHelp" class="form-text text-muted"
+                        >Дана інформація потрібна для того, щоб зв’язатися з
+                        вами</small
+                    >
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="contacts"
+                        placeholder="Введіть ваші контактні дані"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="task">Опишіть завдання:</label>
+                    <small id="taskHelp" class="form-text text-muted"
+                        >Опишіть ваше завдання</small
+                    >
+                    <textarea
+                        class="form-control"
+                        id="task"
+                        rows="4"
+                        placeholder="Введіть опис завдання"
+                    ></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="attachment">Прикріпіть умову завдання:</label>
+                    <small id="attachmentHelp" class="form-text text-muted"
+                        >Прикрипіть файл або фотографію у любому форматі</small
+                    >
+                    <input
+                        type="file"
+                        class="form-control-file"
+                        id="attachment"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="deadline">Виберіть сроки виконання:</label>
+                    <input type="date" class="form-control" id="deadline" />
+                </div>
+                <button type="submit" class="btn btn-primary" id="send_order">
+                    Надіслати замовлення
+                </button>
+            </form>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <p class="text-center">© Vitalij Shevchuk</p>
+                <p class="text-center">Questions? Telegram: @je83dj</p>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="../static/js/script.js"></script>
+    </body>
+</html>
